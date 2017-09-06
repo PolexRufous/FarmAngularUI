@@ -1,0 +1,15 @@
+{
+  "HEADER": {
+    "MENU": {
+      "LANGUAGE": "Language",
+      "ENGLISH": "English",
+      "RUSSIAN": "Русский",
+      "SETTINGS": "Settings"
+    },
+    "HOME": "Home",
+    "EXTERNAL": "External",
+    "INTERNAL": "Internal",
+    "REPORTS": "Reports",
+    "LOGIN": "Login"
+  }
+}

@@ -1,0 +1,30 @@
+<md-menu #rootMenu="mdMenu">
+  <button md-menu-item [mdMenuTriggerFor]="langMenu">
+    <span class="fa fa-language"> {{'HEADER.MENU.LANGUAGE' | translate}}</span></button>
+  <button md-menu-item>
+    <span class="fa fa-gear"> {{'HEADER.MENU.SETTINGS' | translate}}</span></button>
+</md-menu>
+
+<md-menu #langMenu="mdMenu">
+  <button md-menu-item>
+    <span class="fa fa-angle-right"> {{'HEADER.MENU.ENGLISH' | translate}}</span></button>
+  <button md-menu-item>
+    <span class="fa fa-angle-right"> {{'HEADER.MENU.RUSSIAN' | translate}}</span></button>
+</md-menu>
+
+<button md-icon-button [mdMenuTriggerFor]="rootMenu">
+  <md-icon><span class="fa fa-gears fa-lg"></span></md-icon>
+</button>
+<md-toolbar color="primary">
+  <span><img src="/assets/images/baselogo.gif" height=40px></span>
+  <a md-button routerLink="/home" routerLinkActive="active">
+    <span class="fa fa-home fa-lg"></span> {{'HEADER.HOME' | translate}}</a>
+  <a md-button routerLink="/external" routerLinkActive="active">
+    <span class="fa fa-hand-o-up fa-lg"></span> {{'HEADER.EXTERNAL' | translate}}</a>
+  <a md-button routerLink="/internal" routerLinkActive="active">
+    <span class="fa fa-hand-o-down fa-lg"></span> {{'HEADER.INTERNAL' | translate}}</a>
+  <a md-button routerLink="/reports" routerLinkActive="active">
+    <span class="fa fa-line-chart fa-lg"></span> {{'HEADER.REPORTS' | translate}}</a>
+  <span class="flex-spacer"></span>
+  <a md-button ><span class="fa fa-sign-in fa-lg"></span> {{'HEADER.LOGIN' | translate}}</a>
+</md-toolbar>
